@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "cine_suntem_despre_nois",
+  "info": {
+    "singularName": "cine-suntem-despre-noi",
+    "pluralName": "cine-suntem-despre-nois",
+    "displayName": "DespreNoiCineSuntem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "footerText": {
+      "type": "string"
+    },
+    "Value1Title": {
+      "type": "string"
+    },
+    "Value1Description": {
+      "type": "string"
+    },
+    "Value2Title": {
+      "type": "string"
+    },
+    "Value2Description": {
+      "type": "string"
+    },
+    "Value3Title": {
+      "type": "string"
+    },
+    "Value3Description": {
+      "type": "string"
+    },
+    "Value4Title": {
+      "type": "string"
+    },
+    "Value4Description": {
+      "type": "string"
+    },
+    "Value5Title": {
+      "type": "string"
+    },
+    "Value5Description": {
+      "type": "string"
+    }
+  }
+}

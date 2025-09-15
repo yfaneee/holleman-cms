@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "despre_noi_certificaris",
+  "info": {
+    "singularName": "despre-noi-certificari",
+    "pluralName": "despre-noi-certificaris",
+    "displayName": "DespreNoiCertificari"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "Certification1": {
+      "type": "string"
+    },
+    "Certification2": {
+      "type": "string"
+    },
+    "Certification3": {
+      "type": "string"
+    },
+    "Certification4": {
+      "type": "string"
+    }
+  }
+}

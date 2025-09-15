@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_project_cargo_sections",
+  "info": {
+    "singularName": "home-project-cargo-section",
+    "pluralName": "home-project-cargo-sections",
+    "displayName": "HomeProjectCargoSection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainDescription": {
+      "type": "richtext"
+    },
+    "secondaryDescription": {
+      "type": "richtext"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

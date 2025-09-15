@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "misiune_despre_nois",
+  "info": {
+    "singularName": "misiune-despre-noi",
+    "pluralName": "misiune-despre-nois",
+    "displayName": "DespreNoiMisiune"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "paragraph1": {
+      "type": "richtext"
+    },
+    "paragraph2": {
+      "type": "richtext"
+    },
+    "footerText": {
+      "type": "string"
+    }
+  }
+}

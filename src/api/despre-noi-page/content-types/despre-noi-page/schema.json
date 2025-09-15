@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "despre_noi_pages",
+  "info": {
+    "singularName": "despre-noi-page",
+    "pluralName": "despre-noi-pages",
+    "displayName": "DespreNoiHero"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroSubtitle": {
+      "type": "string"
+    }
+  }
+}

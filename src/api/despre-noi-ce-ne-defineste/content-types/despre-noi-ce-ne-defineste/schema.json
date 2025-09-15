@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "despre_noi_ce_ne_definestes",
+  "info": {
+    "singularName": "despre-noi-ce-ne-defineste",
+    "pluralName": "despre-noi-ce-ne-definestes",
+    "displayName": "DespreNoiCeNeDefineste"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Leadership1Title": {
+      "type": "string"
+    },
+    "Leadership1Description": {
+      "type": "richtext"
+    },
+    "Leadership2Title": {
+      "type": "string"
+    },
+    "Leadership2Description": {
+      "type": "richtext"
+    },
+    "Leadership3Title": {
+      "type": "string"
+    },
+    "Leadership3Description": {
+      "type": "richtext"
+    },
+    "Leadership4Title": {
+      "type": "string"
+    },
+    "Leadership4Description": {
+      "type": "richtext"
+    }
+  }
+}

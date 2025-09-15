@@ -1,0 +1,111 @@
+{
+  "kind": "singleType",
+  "collectionName": "heavy_lift_content_sections",
+  "info": {
+    "singularName": "heavy-lift-content-section",
+    "pluralName": "heavy-lift-content-sections",
+    "displayName": "HeavyLiftContentSection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Section1Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Section1Title": {
+      "type": "string"
+    },
+    "Section1Content": {
+      "type": "richtext"
+    },
+    "Section2Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Section2Title": {
+      "type": "string"
+    },
+    "Section2Content": {
+      "type": "richtext"
+    },
+    "Section3Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Section3Title": {
+      "type": "string"
+    },
+    "Section3Content": {
+      "type": "richtext"
+    },
+    "Section4Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Section4Title": {
+      "type": "string"
+    },
+    "Section4Content": {
+      "type": "richtext"
+    },
+    "Section5Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Section5Title": {
+      "type": "string"
+    },
+    "Section5Content": {
+      "type": "richtext"
+    },
+    "Section6Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Section6Title": {
+      "type": "string"
+    },
+    "Section6Content": {
+      "type": "richtext"
+    }
+  }
+}

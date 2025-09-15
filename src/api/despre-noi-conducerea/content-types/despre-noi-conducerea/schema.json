@@ -1,0 +1,107 @@
+{
+  "kind": "singleType",
+  "collectionName": "despre_noi_conducereas",
+  "info": {
+    "singularName": "despre-noi-conducerea",
+    "pluralName": "despre-noi-conducereas",
+    "displayName": "DespreNoiConducerea"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description1": {
+      "type": "richtext"
+    },
+    "description2": {
+      "type": "richtext"
+    },
+    "Member1Avatar": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Member1Name": {
+      "type": "string"
+    },
+    "Member1Position": {
+      "type": "string"
+    },
+    "Member2Avatar": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Member2Name": {
+      "type": "string"
+    },
+    "Member2Position": {
+      "type": "string"
+    },
+    "Member3Avatar": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Member3Name": {
+      "type": "string"
+    },
+    "Member3Position": {
+      "type": "string"
+    },
+    "Member4Avatar": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Member4Name": {
+      "type": "string"
+    },
+    "Member4Position": {
+      "type": "string"
+    },
+    "Member5Avatar": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Member5Name": {
+      "type": "string"
+    },
+    "Member5Position": {
+      "type": "string"
+    }
+  }
+}

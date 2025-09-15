@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_content_section_content_sections",
+  "info": {
+    "displayName": "ContentSection",
+    "icon": "message"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

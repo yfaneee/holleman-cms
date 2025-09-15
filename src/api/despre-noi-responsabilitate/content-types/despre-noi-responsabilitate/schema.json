@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "despre_noi_responsabilitates",
+  "info": {
+    "singularName": "despre-noi-responsabilitate",
+    "pluralName": "despre-noi-responsabilitates",
+    "displayName": "DespreNoiResponsabilitate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Intro": {
+      "type": "richtext"
+    },
+    "Subtitle": {
+      "type": "string"
+    },
+    "Initiative1Title": {
+      "type": "string"
+    },
+    "Initiative1Description": {
+      "type": "richtext"
+    },
+    "Initiative2Title": {
+      "type": "string"
+    },
+    "Initiative2Description": {
+      "type": "richtext"
+    },
+    "Initiative3Title": {
+      "type": "string"
+    },
+    "Initiative3Description": {
+      "type": "richtext"
+    },
+    "Initiative4Title": {
+      "type": "string"
+    },
+    "Initiative4Description": {
+      "type": "richtext"
+    }
+  }
+}

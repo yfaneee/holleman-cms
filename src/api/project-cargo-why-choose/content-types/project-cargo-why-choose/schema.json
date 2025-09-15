@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "project_cargo_why_chooses",
+  "info": {
+    "singularName": "project-cargo-why-choose",
+    "pluralName": "project-cargo-why-chooses",
+    "displayName": "ProjectCargoWhyChoose"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Reason1": {
+      "type": "string"
+    },
+    "Reason2": {
+      "type": "string"
+    },
+    "Reason3": {
+      "type": "string"
+    },
+    "Reason4": {
+      "type": "string"
+    },
+    "Reason5": {
+      "type": "string"
+    },
+    "Reason6": {
+      "type": "string"
+    }
+  }
+}

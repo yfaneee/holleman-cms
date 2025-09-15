@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "heavy_lift_service_cards",
+  "info": {
+    "singularName": "heavy-lift-service-card",
+    "pluralName": "heavy-lift-service-cards",
+    "displayName": "HeavyLiftServiceCard"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SectionTitle": {
+      "type": "string"
+    },
+    "Service1Title": {
+      "type": "string"
+    },
+    "Service2Title": {
+      "type": "string"
+    },
+    "Service3Title": {
+      "type": "string"
+    },
+    "Service4Title": {
+      "type": "string"
+    },
+    "Service5Title": {
+      "type": "string"
+    },
+    "Service6Title": {
+      "type": "string"
+    }
+  }
+}
