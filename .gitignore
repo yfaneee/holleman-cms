@@ -10,13 +10,11 @@ Icon
 .Trashes
 ._*
 
-
 ############################
 # Linux
 ############################
 
 *~
-
 
 ############################
 # Windows
@@ -30,7 +28,6 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
 
 ############################
 # Packages
@@ -60,7 +57,6 @@ $RECYCLE.BIN/
 *.out
 *.pid
 
-
 ############################
 # Logs and databases
 ############################
@@ -70,7 +66,6 @@ $RECYCLE.BIN/
 *.sql
 *.sqlite
 *.sqlite3
-
 
 ############################
 # Misc.
@@ -82,8 +77,6 @@ ssl
 nbproject
 public/uploads/*
 !public/uploads/.gitkeep
-.tsbuildinfo
-.eslintcache
 
 ############################
 # Node.js
@@ -98,20 +91,6 @@ node_modules
 .node_history
 
 ############################
-# Package managers
-############################
-
-.yarn/*
-!.yarn/cache
-!.yarn/unplugged
-!.yarn/patches
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
-yarn-error.log
-
-############################
 # Tests
 ############################
 
@@ -124,8 +103,16 @@ coverage
 .env
 license.txt
 exports
-.strapi
+*.cache
 dist
 build
 .strapi-updater.json
-.strapi-cloud.json
+
+############################
+# Database
+############################
+
+.tmp/
+data.db
+data.db-shm
+data.db-wal
