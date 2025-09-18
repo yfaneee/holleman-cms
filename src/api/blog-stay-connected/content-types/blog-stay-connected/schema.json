@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_stay_connecteds",
+  "info": {
+    "singularName": "blog-stay-connected",
+    "pluralName": "blog-stay-connecteds",
+    "displayName": "BlogStayConnected"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "highlightedTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "facebookUrl": {
+      "type": "string"
+    },
+    "linkedinUrl": {
+      "type": "string"
+    },
+    "tiktokUrl": {
+      "type": "string"
+    },
+    "instagramUrl": {
+      "type": "string"
+    }
+  }
+}

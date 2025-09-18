@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "proiecte_portfolio_sections",
+  "info": {
+    "singularName": "proiecte-portfolio-section",
+    "pluralName": "proiecte-portfolio-sections",
+    "displayName": "Proiecte-portfolio-section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "bulletPoints": {
+      "type": "richtext"
+    }
+  }
+}

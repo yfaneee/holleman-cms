@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_acoperires",
+  "info": {
+    "singularName": "contact-acoperire",
+    "pluralName": "contact-acoperires",
+    "displayName": "ContactAcoperire"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "intro": {
+      "type": "richtext"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "introSubtitle": {
+      "type": "string"
+    },
+    "bulletPoints": {
+      "type": "richtext"
+    }
+  }
+}

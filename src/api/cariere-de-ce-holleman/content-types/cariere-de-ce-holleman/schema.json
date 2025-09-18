@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "cariere_de_ce_hollemen",
+  "info": {
+    "singularName": "cariere-de-ce-holleman",
+    "pluralName": "cariere-de-ce-hollemen",
+    "displayName": "Cariere-DeCe-Holleman"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

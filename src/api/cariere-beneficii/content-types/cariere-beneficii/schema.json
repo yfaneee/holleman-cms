@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "cariere_beneficiis",
+  "info": {
+    "singularName": "cariere-beneficii",
+    "pluralName": "cariere-beneficiis",
+    "displayName": "Cariere-Beneficii"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "highlightedTitle1": {
+      "type": "string"
+    },
+    "title1": {
+      "type": "string"
+    },
+    "highlightedTitle2": {
+      "type": "string"
+    },
+    "title2": {
+      "type": "string"
+    },
+    "highlightedTitle3": {
+      "type": "string"
+    },
+    "title3": {
+      "type": "string"
+    },
+    "highlightedTitle4": {
+      "type": "string"
+    },
+    "title4": {
+      "type": "string"
+    },
+    "highlightedTitle5": {
+      "type": "string"
+    },
+    "title5": {
+      "type": "string"
+    }
+  }
+}

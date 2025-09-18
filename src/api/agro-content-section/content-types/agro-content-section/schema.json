@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "agro_content_sections",
+  "info": {
+    "singularName": "agro-content-section",
+    "pluralName": "agro-content-sections",
+    "displayName": "Agro-Content-Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "highlightedTitle": {
+      "type": "string"
+    },
+    "bulletPoints": {
+      "type": "richtext"
+    }
+  }
+}

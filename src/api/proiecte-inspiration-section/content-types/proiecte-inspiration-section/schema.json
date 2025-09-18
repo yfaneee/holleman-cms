@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "proiecte_inspiration_sections",
+  "info": {
+    "singularName": "proiecte-inspiration-section",
+    "pluralName": "proiecte-inspiration-sections",
+    "displayName": "Proiecte-inspiration-section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "paragraphs": {
+      "type": "richtext"
+    }
+  }
+}

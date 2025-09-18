@@ -373,6 +373,67 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAgroContactSectionAgroContactSection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'agro_contact_sections';
+  info: {
+    displayName: 'Agro-Contact-Section';
+    pluralName: 'agro-contact-sections';
+    singularName: 'agro-contact-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    highlightedText: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::agro-contact-section.agro-contact-section'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiAgroContentSectionAgroContentSection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'agro_content_sections';
+  info: {
+    displayName: 'Agro-Content-Section';
+    pluralName: 'agro-content-sections';
+    singularName: 'agro-content-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bulletPoints: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    highlightedTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::agro-content-section.agro-content-section'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   collectionName: 'articles';
   info: {
@@ -385,10 +446,11 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   };
   attributes: {
     Author: Schema.Attribute.String;
+    Concluzie: Schema.Attribute.String;
     Content: Schema.Attribute.RichText;
     ContentSection: Schema.Attribute.Component<
       'content-section.content-section',
-      false
+      true
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -408,6 +470,140 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
     Subtitle: Schema.Attribute.String;
     tags: Schema.Attribute.String;
     Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiBlogArticleSectionBlogArticleSection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'blog_article_sections';
+  info: {
+    displayName: 'BlogArticleSection';
+    pluralName: 'blog-article-sections';
+    singularName: 'blog-article-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.RichText;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::blog-article-section.blog-article-section'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiBlogStayConnectedBlogStayConnected
+  extends Struct.SingleTypeSchema {
+  collectionName: 'blog_stay_connecteds';
+  info: {
+    displayName: 'BlogStayConnected';
+    pluralName: 'blog-stay-connecteds';
+    singularName: 'blog-stay-connected';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.RichText;
+    facebookUrl: Schema.Attribute.String;
+    highlightedTitle: Schema.Attribute.String;
+    instagramUrl: Schema.Attribute.String;
+    linkedinUrl: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::blog-stay-connected.blog-stay-connected'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    tiktokUrl: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCariereBeneficiiCariereBeneficii
+  extends Struct.SingleTypeSchema {
+  collectionName: 'cariere_beneficiis';
+  info: {
+    displayName: 'Cariere-Beneficii';
+    pluralName: 'cariere-beneficiis';
+    singularName: 'cariere-beneficii';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    highlightedTitle1: Schema.Attribute.String;
+    highlightedTitle2: Schema.Attribute.String;
+    highlightedTitle3: Schema.Attribute.String;
+    highlightedTitle4: Schema.Attribute.String;
+    highlightedTitle5: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::cariere-beneficii.cariere-beneficii'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    title1: Schema.Attribute.String;
+    title2: Schema.Attribute.String;
+    title3: Schema.Attribute.String;
+    title4: Schema.Attribute.String;
+    title5: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCariereDeCeHollemanCariereDeCeHolleman
+  extends Struct.SingleTypeSchema {
+  collectionName: 'cariere_de_ce_hollemen';
+  info: {
+    displayName: 'Cariere-DeCe-Holleman';
+    pluralName: 'cariere-de-ce-hollemen';
+    singularName: 'cariere-de-ce-holleman';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Description: Schema.Attribute.RichText;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::cariere-de-ce-holleman.cariere-de-ce-holleman'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -452,6 +648,171 @@ export interface ApiCineSuntemDespreNoiCineSuntemDespreNoi
     Value4Title: Schema.Attribute.String;
     Value5Description: Schema.Attribute.String;
     Value5Title: Schema.Attribute.String;
+  };
+}
+
+export interface ApiContactAcoperireContactAcoperire
+  extends Struct.SingleTypeSchema {
+  collectionName: 'contact_acoperires';
+  info: {
+    displayName: 'ContactAcoperire';
+    pluralName: 'contact-acoperires';
+    singularName: 'contact-acoperire';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bulletPoints: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    intro: Schema.Attribute.RichText;
+    introSubtitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-acoperire.contact-acoperire'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactLocationContactLocation
+  extends Struct.SingleTypeSchema {
+  collectionName: 'contact_locations';
+  info: {
+    displayName: 'ContactLocation1';
+    pluralName: 'contact-locations';
+    singularName: 'contact-location';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    address: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-location.contact-location'
+    > &
+      Schema.Attribute.Private;
+    mobile: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    services: Schema.Attribute.RichText;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactLocation2ContactLocation2
+  extends Struct.SingleTypeSchema {
+  collectionName: 'contact_location2s';
+  info: {
+    displayName: 'ContactLocation2';
+    pluralName: 'contact-location2s';
+    singularName: 'contact-location2';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    address: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-location2.contact-location2'
+    > &
+      Schema.Attribute.Private;
+    mobile: Schema.Attribute.String;
+    phone: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    services: Schema.Attribute.RichText;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactNetworkInfoContactNetworkInfo
+  extends Struct.SingleTypeSchema {
+  collectionName: 'contact_network_infos';
+  info: {
+    displayName: 'Contact-network-info';
+    pluralName: 'contact-network-infos';
+    singularName: 'contact-network-info';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    highlightedText: Schema.Attribute.String;
+    intro: Schema.Attribute.RichText;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-network-info.contact-network-info'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactNetworkOfficeContactNetworkOffice
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'contact_network_offices';
+  info: {
+    displayName: 'Contact-network-office';
+    pluralName: 'contact-network-offices';
+    singularName: 'contact-network-office';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    city: Schema.Attribute.String;
+    country: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-network-office.contact-network-office'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
   };
 }
 
@@ -810,6 +1171,68 @@ export interface ApiIstoricEvolutieIstoricEvolutie
   };
 }
 
+export interface ApiItlReteaItlRetea extends Struct.SingleTypeSchema {
+  collectionName: 'itl_reteas';
+  info: {
+    displayName: 'ITL-retea';
+    pluralName: 'itl-reteas';
+    singularName: 'itl-retea';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.RichText;
+    featuresList: Schema.Attribute.RichText;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::itl-retea.itl-retea'
+    > &
+      Schema.Attribute.Private;
+    mapImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiItlTransportLogisticsSectionItlTransportLogisticsSection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'itl_transport_logistics_sections';
+  info: {
+    displayName: 'ITL-transport-logistics-section';
+    pluralName: 'itl-transport-logistics-sections';
+    singularName: 'itl-transport-logistics-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bulletPoints: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    highlightedText: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::itl-transport-logistics-section.itl-transport-logistics-section'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiMisiuneDespreNoiMisiuneDespreNoi
   extends Struct.SingleTypeSchema {
   collectionName: 'misiune_despre_nois';
@@ -834,6 +1257,66 @@ export interface ApiMisiuneDespreNoiMisiuneDespreNoi
       Schema.Attribute.Private;
     paragraph1: Schema.Attribute.RichText;
     paragraph2: Schema.Attribute.RichText;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiProiecteInspirationSectionProiecteInspirationSection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'proiecte_inspiration_sections';
+  info: {
+    displayName: 'Proiecte-inspiration-section';
+    pluralName: 'proiecte-inspiration-sections';
+    singularName: 'proiecte-inspiration-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::proiecte-inspiration-section.proiecte-inspiration-section'
+    > &
+      Schema.Attribute.Private;
+    paragraphs: Schema.Attribute.RichText;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiProiectePortfolioSectionProiectePortfolioSection
+  extends Struct.SingleTypeSchema {
+  collectionName: 'proiecte_portfolio_sections';
+  info: {
+    displayName: 'Proiecte-portfolio-section';
+    pluralName: 'proiecte-portfolio-sections';
+    singularName: 'proiecte-portfolio-section';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bulletPoints: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::proiecte-portfolio-section.proiecte-portfolio-section'
+    > &
+      Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -1425,8 +1908,19 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::agro-contact-section.agro-contact-section': ApiAgroContactSectionAgroContactSection;
+      'api::agro-content-section.agro-content-section': ApiAgroContentSectionAgroContentSection;
       'api::article.article': ApiArticleArticle;
+      'api::blog-article-section.blog-article-section': ApiBlogArticleSectionBlogArticleSection;
+      'api::blog-stay-connected.blog-stay-connected': ApiBlogStayConnectedBlogStayConnected;
+      'api::cariere-beneficii.cariere-beneficii': ApiCariereBeneficiiCariereBeneficii;
+      'api::cariere-de-ce-holleman.cariere-de-ce-holleman': ApiCariereDeCeHollemanCariereDeCeHolleman;
       'api::cine-suntem-despre-noi.cine-suntem-despre-noi': ApiCineSuntemDespreNoiCineSuntemDespreNoi;
+      'api::contact-acoperire.contact-acoperire': ApiContactAcoperireContactAcoperire;
+      'api::contact-location.contact-location': ApiContactLocationContactLocation;
+      'api::contact-location2.contact-location2': ApiContactLocation2ContactLocation2;
+      'api::contact-network-info.contact-network-info': ApiContactNetworkInfoContactNetworkInfo;
+      'api::contact-network-office.contact-network-office': ApiContactNetworkOfficeContactNetworkOffice;
       'api::despre-noi-ce-ne-defineste.despre-noi-ce-ne-defineste': ApiDespreNoiCeNeDefinesteDespreNoiCeNeDefineste;
       'api::despre-noi-certificari.despre-noi-certificari': ApiDespreNoiCertificariDespreNoiCertificari;
       'api::despre-noi-conducerea.despre-noi-conducerea': ApiDespreNoiConducereaDespreNoiConducerea;
@@ -1436,7 +1930,11 @@ declare module '@strapi/strapi' {
       'api::heavy-lift-service-card.heavy-lift-service-card': ApiHeavyLiftServiceCardHeavyLiftServiceCard;
       'api::home-project-cargo-section.home-project-cargo-section': ApiHomeProjectCargoSectionHomeProjectCargoSection;
       'api::istoric-evolutie.istoric-evolutie': ApiIstoricEvolutieIstoricEvolutie;
+      'api::itl-retea.itl-retea': ApiItlReteaItlRetea;
+      'api::itl-transport-logistics-section.itl-transport-logistics-section': ApiItlTransportLogisticsSectionItlTransportLogisticsSection;
       'api::misiune-despre-noi.misiune-despre-noi': ApiMisiuneDespreNoiMisiuneDespreNoi;
+      'api::proiecte-inspiration-section.proiecte-inspiration-section': ApiProiecteInspirationSectionProiecteInspirationSection;
+      'api::proiecte-portfolio-section.proiecte-portfolio-section': ApiProiectePortfolioSectionProiectePortfolioSection;
       'api::project-cargo-why-choose.project-cargo-why-choose': ApiProjectCargoWhyChooseProjectCargoWhyChoose;
       'api::project.project': ApiProjectProject;
       'plugin::content-releases.release': PluginContentReleasesRelease;

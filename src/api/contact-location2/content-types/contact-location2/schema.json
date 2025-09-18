@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_location2s",
+  "info": {
+    "singularName": "contact-location2",
+    "pluralName": "contact-location2s",
+    "displayName": "ContactLocation2"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "services": {
+      "type": "richtext"
+    }
+  }
+}

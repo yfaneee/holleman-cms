@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "agro_contact_sections",
+  "info": {
+    "singularName": "agro-contact-section",
+    "pluralName": "agro-contact-sections",
+    "displayName": "Agro-Contact-Section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "highlightedText": {
+      "type": "string"
+    }
+  }
+}

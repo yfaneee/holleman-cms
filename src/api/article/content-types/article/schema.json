@@ -49,12 +49,15 @@
     "ContentSection": {
       "type": "component",
       "component": "content-section.content-section",
-      "repeatable": false
+      "repeatable": true
     },
     "Seo": {
       "type": "component",
       "component": "metadata.seo",
       "repeatable": true
+    },
+    "Concluzie": {
+      "type": "string"
     }
   }
 }

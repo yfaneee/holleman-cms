@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "itl_transport_logistics_sections",
+  "info": {
+    "singularName": "itl-transport-logistics-section",
+    "pluralName": "itl-transport-logistics-sections",
+    "displayName": "ITL-transport-logistics-section"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "highlightedText": {
+      "type": "string"
+    },
+    "bulletPoints": {
+      "type": "richtext"
+    }
+  }
+}
