@@ -57,7 +57,7 @@
       "repeatable": true
     },
     "Concluzie": {
-      "type": "string"
+      "type": "richtext"
     }
   }
 }
