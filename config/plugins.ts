@@ -1,11 +1,9 @@
 export default ({ env }) => ({
   upload: {
     config: {
-      provider: '@strapi/provider-upload-cloudinary',
+      provider: 'local',
       providerOptions: {
-        cloud_name: env('CLOUDINARY_NAME'),
-        api_key: env('CLOUDINARY_KEY'),
-        api_secret: env('CLOUDINARY_SECRET'),
+        sizeLimit: 100000000, // 100MB
       },
     },
   },
