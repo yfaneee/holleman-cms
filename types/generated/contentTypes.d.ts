@@ -1216,6 +1216,7 @@ export interface ApiItlTransportLogisticsSectionItlTransportLogisticsSection
   };
   attributes: {
     bulletPoints: Schema.Attribute.RichText;
+    catchphrase: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

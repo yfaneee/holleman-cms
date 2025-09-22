@@ -19,6 +19,9 @@
     },
     "bulletPoints": {
       "type": "richtext"
+    },
+    "catchphrase": {
+      "type": "text"
     }
   }
 }
