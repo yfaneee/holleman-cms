@@ -1,11 +1,12 @@
 {
   "$schema": "https://railway.app/railway.schema.json",
+  "//": "Emergency revert to production mode",
   "build": {
     "builder": "NIXPACKS",
     "buildCommand": "npm run build"
   },
   "deploy": {
-    "startCommand": "NODE_ENV=development npm run develop",
+    "startCommand": "npm start",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 3
   }
