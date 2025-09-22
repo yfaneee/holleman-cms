@@ -4,6 +4,4 @@ export default ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
-  // Ensure development mode works
-  autoReload: env.bool('STRAPI_AUTO_RELOAD', env('NODE_ENV') === 'development'),
 });
