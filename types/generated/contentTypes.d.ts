@@ -1953,21 +1953,3 @@ declare module '@strapi/strapi' {
   }
 }
 
-export interface ApiHomeHeroHomeHero extends Struct.SingleTypeSchema {
-  collectionName: 'home_heroes';
-  info: {
-    displayName: 'Home Hero';
-    singularName: 'home-hero';
-    pluralName: 'home-heroes';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    titleText: Schema.Attribute.Text;
-    subtitleText: Schema.Attribute.Text;
-    createdAt: Schema.Attribute.DateTime;
-    publishedAt: Schema.Attribute.DateTime;
-    updatedAt: Schema.Attribute.DateTime;
-  };
-}
