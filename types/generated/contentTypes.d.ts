@@ -1930,9 +1930,14 @@ declare module '@strapi/strapi' {
       'api::despre-noi-responsabilitate.despre-noi-responsabilitate': ApiDespreNoiResponsabilitateDespreNoiResponsabilitate;
       'api::heavy-lift-content-section.heavy-lift-content-section': ApiHeavyLiftContentSectionHeavyLiftContentSection;
       'api::heavy-lift-service-card.heavy-lift-service-card': ApiHeavyLiftServiceCardHeavyLiftServiceCard;
+      'api::agro-hero.agro-hero': ApiAgroHeroAgroHero;
+      'api::blog-hero.blog-hero': ApiBlogHeroBlogHero;
       'api::cariere-hero.cariere-hero': ApiCariereHeroCariereHero;
+      'api::contact-hero.contact-hero': ApiContactHeroContactHero;
       'api::heavy-lift-hero.heavy-lift-hero': ApiHeavyLiftHeroHeavyLiftHero;
       'api::home-hero.home-hero': ApiHomeHeroHomeHero;
+      'api::itl-hero.itl-hero': ApiItlHeroItlHero;
+      'api::proiecte-hero.proiecte-hero': ApiProiecteHeroProiecteHero;
       'api::project-cargo-hero.project-cargo-hero': ApiProjectCargoHeroProjectCargoHero;
       'api::home-project-cargo-section.home-project-cargo-section': ApiHomeProjectCargoSectionHomeProjectCargoSection;
       'api::istoric-evolutie.istoric-evolutie': ApiIstoricEvolutieIstoricEvolutie;
@@ -2001,6 +2006,101 @@ export interface ApiHomeHeroHomeHero extends Struct.SingleTypeSchema {
     displayName: 'Home Hero';
     singularName: 'home-hero';
     pluralName: 'home-heroes';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.Text & Schema.Attribute.Required;
+    subtitleText: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+  };
+}
+
+export interface ApiAgroHeroAgroHero extends Struct.SingleTypeSchema {
+  collectionName: 'agro_heroes';
+  info: {
+    displayName: 'Agro Hero';
+    singularName: 'agro-hero';
+    pluralName: 'agro-heroes';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.Text & Schema.Attribute.Required;
+    subtitleText: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+  };
+}
+
+export interface ApiBlogHeroBlogHero extends Struct.SingleTypeSchema {
+  collectionName: 'blog_heroes';
+  info: {
+    displayName: 'Blog Hero';
+    singularName: 'blog-hero';
+    pluralName: 'blog-heroes';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.Text & Schema.Attribute.Required;
+    subtitleText: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+  };
+}
+
+export interface ApiContactHeroContactHero extends Struct.SingleTypeSchema {
+  collectionName: 'contact_heroes';
+  info: {
+    displayName: 'Contact Hero';
+    singularName: 'contact-hero';
+    pluralName: 'contact-heroes';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.Text & Schema.Attribute.Required;
+    subtitleText: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+  };
+}
+
+export interface ApiItlHeroItlHero extends Struct.SingleTypeSchema {
+  collectionName: 'itl_heroes';
+  info: {
+    displayName: 'ITL Hero';
+    singularName: 'itl-hero';
+    pluralName: 'itl-heroes';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.Text & Schema.Attribute.Required;
+    subtitleText: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+  };
+}
+
+export interface ApiProiecteHeroProiecteHero extends Struct.SingleTypeSchema {
+  collectionName: 'proiecte_heroes';
+  info: {
+    displayName: 'Proiecte Hero';
+    singularName: 'proiecte-hero';
+    pluralName: 'proiecte-heroes';
   };
   options: {
     draftAndPublish: true;
