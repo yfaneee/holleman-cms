@@ -17,7 +17,7 @@
     "Description": {
       "type": "richtext"
     },
-    "career-quote-text": {
+    "careerQuoteText": {
       "type": "text"
     }
   }

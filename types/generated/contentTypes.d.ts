@@ -592,7 +592,7 @@ export interface ApiCariereDeCeHollemanCariereDeCeHolleman
     draftAndPublish: true;
   };
   attributes: {
-    'career-quote-text': Schema.Attribute.Text;
+    careerQuoteText: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
