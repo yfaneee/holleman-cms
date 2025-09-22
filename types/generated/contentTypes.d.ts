@@ -1930,7 +1930,10 @@ declare module '@strapi/strapi' {
       'api::despre-noi-responsabilitate.despre-noi-responsabilitate': ApiDespreNoiResponsabilitateDespreNoiResponsabilitate;
       'api::heavy-lift-content-section.heavy-lift-content-section': ApiHeavyLiftContentSectionHeavyLiftContentSection;
       'api::heavy-lift-service-card.heavy-lift-service-card': ApiHeavyLiftServiceCardHeavyLiftServiceCard;
+      'api::cariere-hero.cariere-hero': ApiCariereHeroCariereHero;
+      'api::heavy-lift-hero.heavy-lift-hero': ApiHeavyLiftHeroHeavyLiftHero;
       'api::home-hero.home-hero': ApiHomeHeroHomeHero;
+      'api::project-cargo-hero.project-cargo-hero': ApiProjectCargoHeroProjectCargoHero;
       'api::home-project-cargo-section.home-project-cargo-section': ApiHomeProjectCargoSectionHomeProjectCargoSection;
       'api::istoric-evolutie.istoric-evolutie': ApiIstoricEvolutieIstoricEvolutie;
       'api::itl-retea.itl-retea': ApiItlReteaItlRetea;
@@ -1954,12 +1957,69 @@ declare module '@strapi/strapi' {
   }
 }
 
+export interface ApiCariereHeroCariereHero extends Struct.SingleTypeSchema {
+  collectionName: 'cariere_heroes';
+  info: {
+    displayName: 'Cariere Hero';
+    singularName: 'cariere-hero';
+    pluralName: 'cariere-heroes';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.Text & Schema.Attribute.Required;
+    subtitleText: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+  };
+}
+
+export interface ApiHeavyLiftHeroHeavyLiftHero extends Struct.SingleTypeSchema {
+  collectionName: 'heavy_lift_heroes';
+  info: {
+    displayName: 'Heavy Lift Hero';
+    singularName: 'heavy-lift-hero';
+    pluralName: 'heavy-lift-heroes';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.Text & Schema.Attribute.Required;
+    subtitleText: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+  };
+}
+
 export interface ApiHomeHeroHomeHero extends Struct.SingleTypeSchema {
   collectionName: 'home_heroes';
   info: {
     displayName: 'Home Hero';
     singularName: 'home-hero';
     pluralName: 'home-heroes';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.Text & Schema.Attribute.Required;
+    subtitleText: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+  };
+}
+
+export interface ApiProjectCargoHeroProjectCargoHero extends Struct.SingleTypeSchema {
+  collectionName: 'project_cargo_heroes';
+  info: {
+    displayName: 'Project Cargo Hero';
+    singularName: 'project-cargo-hero';
+    pluralName: 'project-cargo-heroes';
   };
   options: {
     draftAndPublish: true;

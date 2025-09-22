@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "itl_heroes",
+  "info": {
+    "singularName": "itl-hero",
+    "pluralName": "itl-heroes",
+    "displayName": "ITL Hero",
+    "description": "Hero section content for ITL page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "subtitleText": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

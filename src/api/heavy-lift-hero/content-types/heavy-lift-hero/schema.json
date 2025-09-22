@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "heavy_lift_heroes",
+  "info": {
+    "singularName": "heavy-lift-hero",
+    "pluralName": "heavy-lift-heroes",
+    "displayName": "Heavy Lift Hero",
+    "description": "Hero section content for heavy lift page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "subtitleText": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

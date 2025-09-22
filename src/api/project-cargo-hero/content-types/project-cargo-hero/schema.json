@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "project_cargo_heroes",
+  "info": {
+    "singularName": "project-cargo-hero",
+    "pluralName": "project-cargo-heroes",
+    "displayName": "Project Cargo Hero",
+    "description": "Hero section content for project cargo page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "subtitleText": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

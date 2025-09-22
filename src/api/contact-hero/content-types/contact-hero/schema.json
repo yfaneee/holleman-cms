@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_heroes",
+  "info": {
+    "singularName": "contact-hero",
+    "pluralName": "contact-heroes",
+    "displayName": "Contact Hero",
+    "description": "Hero section content for contact page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "subtitleText": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
