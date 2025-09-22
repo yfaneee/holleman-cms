@@ -16,6 +16,9 @@
     },
     "Description": {
       "type": "richtext"
+    },
+    "career-quote-text": {
+      "type": "text"
     }
   }
 }
