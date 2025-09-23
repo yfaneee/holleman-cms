@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "cariere_positions",
+  "info": {
+    "singularName": "cariere-positions",
+    "pluralName": "cariere-positions",
+    "displayName": "Cariere Positions",
+    "description": "Available job positions for the careers page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "position1Title": {
+      "type": "string",
+      "required": true
+    },
+    "position1Description": {
+      "type": "text",
+      "required": true
+    },
+    "position2Title": {
+      "type": "string",
+      "required": true
+    },
+    "position2Description": {
+      "type": "text",
+      "required": true
+    },
+    "position3Title": {
+      "type": "string",
+      "required": true
+    },
+    "position3Description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
