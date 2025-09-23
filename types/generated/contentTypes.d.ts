@@ -2025,7 +2025,7 @@ export interface ApiCarierePozitiiCarierePozitii extends Struct.SingleTypeSchema
   info: {
     displayName: 'Cariere Pozitii';
     singularName: 'cariere-pozitii';
-    pluralName: 'cariere-pozitii';
+    pluralName: 'cariere-pozitii-plural';
   };
   options: {
     draftAndPublish: true;

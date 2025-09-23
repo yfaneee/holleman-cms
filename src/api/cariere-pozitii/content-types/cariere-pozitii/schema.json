@@ -3,7 +3,7 @@
   "collectionName": "cariere_pozitii",
   "info": {
     "singularName": "cariere-pozitii",
-    "pluralName": "cariere-pozitii",
+    "pluralName": "cariere-pozitii-plural",
     "displayName": "Cariere Pozitii",
     "description": "Available job positions for the careers page"
   },
