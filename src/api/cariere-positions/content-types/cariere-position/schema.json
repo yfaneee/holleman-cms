@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cariere_positions",
+  "info": {
+    "singularName": "cariere-position",
+    "pluralName": "cariere-positions",
+    "displayName": "Cariere Positions",
+    "description": "Available job positions for the careers page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
