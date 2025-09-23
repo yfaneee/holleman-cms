@@ -4,7 +4,7 @@
   "info": {
     "singularName": "cariere-position",
     "pluralName": "cariere-positions",
-    "displayName": "Cariere Positions",
+    "displayName": "Cariere Position",
     "description": "Available job positions for the careers page"
   },
   "options": {
