@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "cariere_joburi",
+  "collectionName": "cariere_pozitii",
   "info": {
-    "singularName": "cariere-joburi",
-    "pluralName": "cariere-joburi",
-    "displayName": "Cariere Joburi",
+    "singularName": "cariere-pozitii",
+    "pluralName": "cariere-pozitii",
+    "displayName": "Cariere Pozitii",
     "description": "Available job positions for the careers page"
   },
   "options": {

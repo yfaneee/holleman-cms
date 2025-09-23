@@ -1936,6 +1936,7 @@ declare module '@strapi/strapi' {
       'api::contact-hero.contact-hero': ApiContactHeroContactHero;
       'api::heavy-lift-hero.heavy-lift-hero': ApiHeavyLiftHeroHeavyLiftHero;
       'api::home-hero.home-hero': ApiHomeHeroHomeHero;
+      'api::cariere-pozitii.cariere-pozitii': ApiCarierePozitiiCarierePozitii;
       'api::itl-hero.itl-hero': ApiItlHeroItlHero;
       'api::proiecte-hero.proiecte-hero': ApiProiecteHeroProiecteHero;
       'api::project-cargo-hero.project-cargo-hero': ApiProjectCargoHeroProjectCargoHero;
@@ -2013,6 +2014,29 @@ export interface ApiHomeHeroHomeHero extends Struct.SingleTypeSchema {
   attributes: {
     title: Schema.Attribute.Text & Schema.Attribute.Required;
     subtitleText: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+  };
+}
+
+export interface ApiCarierePozitiiCarierePozitii extends Struct.SingleTypeSchema {
+  collectionName: 'cariere_pozitii';
+  info: {
+    displayName: 'Cariere Pozitii';
+    singularName: 'cariere-pozitii';
+    pluralName: 'cariere-pozitii';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    position1Title: Schema.Attribute.String & Schema.Attribute.Required;
+    position1Description: Schema.Attribute.Text & Schema.Attribute.Required;
+    position2Title: Schema.Attribute.String & Schema.Attribute.Required;
+    position2Description: Schema.Attribute.Text & Schema.Attribute.Required;
+    position3Title: Schema.Attribute.String & Schema.Attribute.Required;
+    position3Description: Schema.Attribute.Text & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
