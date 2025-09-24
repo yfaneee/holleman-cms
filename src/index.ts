@@ -16,8 +16,7 @@ export default {
    * This gives you an opportunity to set up your data model,
    * run jobs, or perform some special logic.
    */
-  async bootstrap({ strapi }) {
-    // Bootstrap function - keeping it minimal to avoid issues
-    console.log('🚀 Strapi application started successfully');
+  async bootstrap(/*{ strapi }*/) {
+    // ...
   },
 };
