@@ -24,28 +24,48 @@ export default {
       });
 
       if (publicRole) {
-        // ITL Hero permissions
-        await strapi.query('plugin::users-permissions.permission').updateMany({
-          where: {
-            role: publicRole.id,
-            action: ['api::itl-hero.itl-hero.find', 'api::itl-hero.itl-hero.findOne'],
-          },
-          data: { enabled: true },
-        });
+        // Define the actions we want to enable
+        const actionsToEnable = [
+          'api::itl-hero.itl-hero.find',
+          'api::itl-hero.itl-hero.findOne', 
+          'api::project-cargo-hero.project-cargo-hero.find',
+          'api::project-cargo-hero.project-cargo-hero.findOne'
+        ];
 
-        // Project Cargo Hero permissions  
-        await strapi.query('plugin::users-permissions.permission').updateMany({
-          where: {
-            role: publicRole.id,
-            action: ['api::project-cargo-hero.project-cargo-hero.find', 'api::project-cargo-hero.project-cargo-hero.findOne'],
-          },
-          data: { enabled: true },
-        });
+        // Enable each permission individually
+        for (const action of actionsToEnable) {
+          try {
+            await strapi.query('plugin::users-permissions.permission').updateMany({
+              where: {
+                role: publicRole.id,
+                action: action,
+              },
+              data: { enabled: true },
+            });
+            console.log(`✅ Enabled permission: ${action}`);
+          } catch (permError) {
+            console.log(`⚠️ Could not update permission ${action}, trying to create it...`);
+            // If update fails, try to create the permission
+            try {
+              await strapi.query('plugin::users-permissions.permission').create({
+                data: {
+                  action: action,
+                  enabled: true,
+                  policy: '',
+                  role: publicRole.id,
+                },
+              });
+              console.log(`✅ Created permission: ${action}`);
+            } catch (createError) {
+              console.error(`❌ Failed to create permission ${action}:`, createError);
+            }
+          }
+        }
 
-        console.log('✅ Permissions set for ITL Hero and Project Cargo Hero endpoints');
+        console.log('✅ Finished setting up permissions for ITL Hero and Project Cargo Hero');
       }
     } catch (error) {
-      console.error('❌ Error setting permissions:', error);
+      console.error('❌ Error in bootstrap permissions setup:', error);
     }
   },
 };
