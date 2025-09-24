@@ -12,29 +12,35 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "positions": {
+      "type": "component",
+      "repeatable": true,
+      "required": true,
+      "component": "cariere.position"
+    },
     "position1Title": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "position1Description": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "position2Title": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "position2Description": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "position3Title": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "position3Description": {
       "type": "text",
-      "required": true
+      "required": false
     }
   }
 }
