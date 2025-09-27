@@ -19,6 +19,10 @@
     },
     "bulletPoints": {
       "type": "richtext"
+    },
+    "catchphrase": {
+      "type": "string",
+      "required": false
     }
   }
 }
