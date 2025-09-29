@@ -21,14 +21,6 @@
     "website": {
       "type": "string",
       "required": false
-    },
-    "workingHours": {
-      "type": "text",
-      "required": false
-    },
-    "manager": {
-      "type": "string",
-      "required": false
     }
   }
 }
