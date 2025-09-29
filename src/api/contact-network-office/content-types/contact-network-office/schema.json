@@ -26,6 +26,11 @@
         "videos",
         "audios"
       ]
+    },
+    "detailedInfo": {
+      "type": "component",
+      "component": "office.detailed-info",
+      "required": false
     }
   }
 }

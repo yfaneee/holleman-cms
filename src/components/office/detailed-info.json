@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_office_detailed_infos",
+  "info": {
+    "displayName": "Detailed Info",
+    "description": "Detailed contact information for office locations"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "website": {
+      "type": "string",
+      "required": false
+    },
+    "workingHours": {
+      "type": "text",
+      "required": false
+    },
+    "manager": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
